@@ -8,7 +8,6 @@ White: #FFF
 */
 
 @import url("https://use.typekit.net/bdh0mbv.css");
-
 * {
   font-family: "muli", sans-serif;
 }
@@ -42,6 +41,7 @@ White: #FFF
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,59 +66,100 @@ White: #FFF
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 48px 24px;
+  padding: 32px 24px;
 }
 
 #values-section > h3 {
-    font-size: 32px;
-    font-weight: 700;
-    border-bottom: 2px #00b172;
-    margin: 32px 0;
+  font-size: 32px;
+  font-weight: 800;
+  box-shadow: 0 3px 0 #00b172;
+  margin: 0 0 104px 0;
 }
 
 #card-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 0 24px;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 24px;
+}
 
 .individual-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  width: 240px; 
+  align-content: center;
+  padding: 0 24px;
+  width: 30%;
+  text-align: center;
 }
 
 .value-icon {
-  height: 72px;
+  display: flex;
+  height: 80px;
+  object-fit: fill;
 }
 
+.individual-card > h4 {
+  color: #00b172;
+  font-weight: 900;
+  font-size: 20px;
+  margin: 16px;
+}
 
+.individual-card > h5 {
+  font-weight: 200;
+  font-size: 18px;
+  margin: 0 0 32px 0;
+}
 
 #teaser-section {
   background-color: #00b172;
   display: flex;
   flex-direction: row;
   margin: 0 32px 32px 32px;
-  padding: 80px 96px;
+  padding: 40px 48px;
   justify-content: space-between;
+  align-items: flex-start;
+
   background-image: url(../images/spotify-icon-white.png);
   background-size: 64px;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-#teaser-content {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
+#teaser-content > h1 {
+  font-size: 32px;
+  font-weight: 700;
   color: white;
+  box-shadow: 0 3px 0 white;
+  padding: 0 0 3px 0;
+  display: inline-block;
+}
+
+#smaller-container {
+  color: white;
+  width: 50%;
+}
+
+#smaller-container > h3 {
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.flex-item {
+  margin: 0 0 24px 0;
 }
 
 #img-container {
+  width: 50%;
+  height: 100%;
   display: flex;
-  align-items: flex-end;
-  width: 25%;
+  justify-content: center;
+  align-items: center;
+}
+
+#app-image {
+  max-width: 50%; 
+  max-height: 50%;
+  object-fit: contain;
 }
